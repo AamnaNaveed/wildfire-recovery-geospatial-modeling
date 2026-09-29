@@ -1,0 +1,42 @@
+{
+  "stage": 2,
+  "description": "Fire event catalog built from MTBS Fire Occurrence Data",
+  "timestamp": "2026-09-30T01:59:18.824049",
+  "source_file": "data\\interim\\fod_points\\bsp_FODpoints_DD.shp",
+  "source_program": "MTBS (Monitoring Trends in Burn Severity)",
+  "filters_applied": {
+    "map_prog": "MTBS",
+    "incid_type": "Wildfire",
+    "year_min": 2018,
+    "year_max": 2022,
+    "area_ha_min": 1000,
+    "area_ha_max": 250000,
+    "bbox_lon_min": -124.5,
+    "bbox_lon_max": -114.0,
+    "bbox_lat_min": 32.5,
+    "bbox_lat_max": 42.0
+  },
+  "filter_report": {
+    "initial_rows": 53576,
+    "after_map_prog": 30933,
+    "after_incid_type": 16780,
+    "after_year_filter": 2325,
+    "after_numeric_coerce": 2325,
+    "after_bbox_filter": 312,
+    "after_area_filter": 202
+  },
+  "final_catalog_rows": 202,
+  "years_in_catalog": [
+    2018,
+    2019,
+    2020,
+    2021,
+    2022
+  ],
+  "area_ha_range": [
+    1000.38,
+    174760.01
+  ],
+  "config_loaded": true,
+  "output_file": "data\\interim\\fire_catalog.csv"
+}
