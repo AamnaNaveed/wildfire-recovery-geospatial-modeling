@@ -1,0 +1,14 @@
+{
+  "timestamp": "2026-09-29T20:12:14.889583",
+  "python_version": "3.12.14 | packaged by conda-forge | (main, Sep  2 2026, 23:18:20) [MSC v.1944 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.22621-SP0",
+  "packages": {
+    "numpy": "NOT INSTALLED",
+    "pandas": "NOT INSTALLED",
+    "matplotlib": "NOT INSTALLED",
+    "sklearn": "NOT INSTALLED",
+    "xarray": "NOT INSTALLED",
+    "rasterio": "NOT INSTALLED",
+    "geopandas": "NOT INSTALLED"
+  }
+}
