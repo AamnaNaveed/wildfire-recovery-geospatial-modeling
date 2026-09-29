@@ -1,0 +1,46 @@
+{
+  "path": "data\\interim\\synthetic_test.tif",
+  "driver": "GTiff",
+  "crs": "EPSG:4326",
+  "shape": [
+    100,
+    100
+  ],
+  "count": 3,
+  "dtype": "float32",
+  "transform": [
+    1.0,
+    0.0,
+    0.0,
+    0.0,
+    -1.0,
+    100.0
+  ],
+  "band_descriptions": [
+    "Red",
+    "NIR",
+    "NDVI"
+  ],
+  "stats": {
+    "red": {
+      "min": 0.0,
+      "max": 0.4295412003993988,
+      "mean": 0.17376892268657684
+    },
+    "nir": {
+      "min": 0.29416316747665405,
+      "max": 0.8045207262039185,
+      "mean": 0.5509874820709229
+    },
+    "ndvi": {
+      "min": 0.19096089899539948,
+      "max": 1.0,
+      "mean": 0.5264105200767517,
+      "valid_pixels": 10000,
+      "total_pixels": 10000
+    }
+  },
+  "timestamp": "2026-09-30T00:50:56.107906",
+  "source": "synthetic",
+  "config_loaded": true
+}

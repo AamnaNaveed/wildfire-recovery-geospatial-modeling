@@ -1,6 +1,14 @@
-name: wildfire-recovery
-channels:
-  - conda-forge
-dependencies:
-  - python=3.12
-  - pip
+name: wildfire-recovery 
+channels: 
+  - conda-forge 
+dependencies: 
+  - python=3.12 
+  - pip 
+  - pip: 
+      - numpy 
+      - pandas 
+      - matplotlib 
+      - xarray 
+      - rasterio 
+      - rioxarray 
+      - pyyaml 
