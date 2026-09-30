@@ -1,0 +1,76 @@
+{
+  "stage": "5b",
+  "batch": 1,
+  "timestamp": "2026-09-30T23:30:59.763674",
+  "n_fires": 5,
+  "n_succeeded": 5,
+  "n_failed": 0,
+  "errors": [],
+  "fires": [
+    {
+      "event_id": "CA3924012311020180727",
+      "fire_name": "RANCH",
+      "ecosystem": "forest",
+      "year": 2018,
+      "mtbs_pre_date": "2017-07-23",
+      "mtbs_post_date": "2019-08-14",
+      "pre_nbr_mean": 0.3229210078716278,
+      "post_nbr_mean": 0.24321523308753967,
+      "dNBR_mean": 0.07447458058595657,
+      "fraction_above_0.1": 0.2454,
+      "block_coherence": 0.4275
+    },
+    {
+      "event_id": "CA3879612276720191023",
+      "fire_name": "KINCADE",
+      "ecosystem": "forest",
+      "year": 2019,
+      "mtbs_pre_date": "2019-04-24",
+      "mtbs_post_date": "2020-04-26",
+      "pre_nbr_mean": 0.21435964107513428,
+      "post_nbr_mean": 0.1997293382883072,
+      "dNBR_mean": 0.02550557255744934,
+      "fraction_above_0.1": 0.3008,
+      "block_coherence": 0.3808
+    },
+    {
+      "event_id": "CA3720111927220200905",
+      "fire_name": "CREEK",
+      "ecosystem": "forest",
+      "year": 2020,
+      "mtbs_pre_date": "2020-08-27",
+      "mtbs_post_date": "2021-08-30",
+      "pre_nbr_mean": 0.06802872568368912,
+      "post_nbr_mean": 0.018703890964388847,
+      "dNBR_mean": 0.050230056047439575,
+      "fraction_above_0.1": 0.2075,
+      "block_coherence": 0.238
+    },
+    {
+      "event_id": "CA3858612053820210815",
+      "fire_name": "CALDOR",
+      "ecosystem": "forest",
+      "year": 2021,
+      "mtbs_pre_date": "2021-08-05",
+      "mtbs_post_date": "2022-07-23",
+      "pre_nbr_mean": 0.15520787239074707,
+      "post_nbr_mean": 0.09316032379865646,
+      "dNBR_mean": 0.03759178891777992,
+      "fraction_above_0.1": 0.3333,
+      "block_coherence": 0.0
+    },
+    {
+      "event_id": "CA4183012289520220729",
+      "fire_name": "MCKINNEY",
+      "ecosystem": "forest",
+      "year": 2022,
+      "mtbs_pre_date": "2021-08-30",
+      "mtbs_post_date": "2023-08-15",
+      "pre_nbr_mean": 0.2775886654853821,
+      "post_nbr_mean": 0.16885660588741302,
+      "dNBR_mean": 0.10863646864891052,
+      "fraction_above_0.1": 0.4999,
+      "block_coherence": 0.3276
+    }
+  ]
+}
