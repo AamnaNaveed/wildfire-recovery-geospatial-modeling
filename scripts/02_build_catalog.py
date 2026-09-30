@@ -33,7 +33,8 @@ FILTERS = {
     "year_max": 2022,
     "area_ha_min": 1000,
     "area_ha_max": 250000,
-    # California bounding box (approximate)
+    "state_prefix": "CA",  # California only
+    # California bounding box (approximate, secondary filter)
     "bbox_lon_min": -124.5,
     "bbox_lon_max": -114.0,
     "bbox_lat_min": 32.5,
@@ -62,24 +63,28 @@ def apply_filters(gdf):
     gdf = gdf[gdf["incid_type"] == FILTERS["incid_type"]].copy()
     report["after_incid_type"] = int(len(gdf))
 
-    # 3. Parse ignition year
+    # 3. Filter by state prefix in event_id (CA only)
+    gdf = gdf[gdf["event_id"].astype(str).str.startswith(FILTERS["state_prefix"])].copy()
+    report["after_state_prefix"] = int(len(gdf))
+
+    # 4. Parse ignition year
     gdf["ignition_date"] = pd.to_datetime(gdf["ig_date"], errors="coerce")
     gdf["year"] = gdf["ignition_date"].dt.year
 
-    # 4. Filter years
+    # 5. Filter years
     gdf = gdf[
         (gdf["year"] >= FILTERS["year_min"]) & (gdf["year"] <= FILTERS["year_max"])
     ].copy()
     report["after_year_filter"] = int(len(gdf))
 
-    # 5. Convert lat/lon/area to numeric (shapefile loads them as strings)
+    # 6. Convert lat/lon/area to numeric (shapefile loads them as strings)
     gdf["burnbndlat"] = pd.to_numeric(gdf["burnbndlat"], errors="coerce")
     gdf["burnbndlon"] = pd.to_numeric(gdf["burnbndlon"], errors="coerce")
     gdf["burnbndac"] = pd.to_numeric(gdf["burnbndac"], errors="coerce")
     gdf = gdf.dropna(subset=["burnbndlat", "burnbndlon", "burnbndac"]).copy()
     report["after_numeric_coerce"] = int(len(gdf))
 
-    # 6. Filter geography (California bounding box)
+    # 7. Filter geography (California bounding box)
     gdf = gdf[
         (gdf["burnbndlon"] >= FILTERS["bbox_lon_min"])
         & (gdf["burnbndlon"] <= FILTERS["bbox_lon_max"])
@@ -88,7 +93,7 @@ def apply_filters(gdf):
     ].copy()
     report["after_bbox_filter"] = int(len(gdf))
 
-    # 7. Convert acres to hectares and filter by area
+    # 8. Convert acres to hectares and filter by area
     gdf["area_ha"] = gdf["burnbndac"] * ACRES_TO_HA
     gdf = gdf[
         (gdf["area_ha"] >= FILTERS["area_ha_min"])
@@ -146,35 +151,31 @@ def main():
     print("Stage 2: Build fire event catalog")
     print("-" * 50)
 
-    # Load config
     config = load_config()
     print(f"Config loaded: {bool(config)}")
 
-    # Read shapefile
     print(f"Reading {SOURCE_SHP.relative_to(PROJECT_ROOT)} ...")
     gdf = gpd.read_file(SOURCE_SHP)
     print(f"  Loaded {len(gdf):,} rows")
 
-    # Apply filters
     filtered, report = apply_filters(gdf)
     print("-" * 50)
     print("Filter report:")
-    print(f"  Initial:            {report['initial_rows']:>6,}")
-    print(f"  After map_prog:     {report['after_map_prog']:>6,}")
-    print(f"  After incid_type:   {report['after_incid_type']:>6,}")
-    print(f"  After year:         {report['after_year_filter']:>6,}")
-    print(f"  After numeric:      {report['after_numeric_coerce']:>6,}")
-    print(f"  After bbox (CA):    {report['after_bbox_filter']:>6,}")
-    print(f"  After area:         {report['after_area_filter']:>6,}")
+    print(f"  Initial:              {report['initial_rows']:>6,}")
+    print(f"  After map_prog:       {report['after_map_prog']:>6,}")
+    print(f"  After incid_type:     {report['after_incid_type']:>6,}")
+    print(f"  After state prefix:   {report['after_state_prefix']:>6,}")
+    print(f"  After year:           {report['after_year_filter']:>6,}")
+    print(f"  After numeric:        {report['after_numeric_coerce']:>6,}")
+    print(f"  After bbox (CA):      {report['after_bbox_filter']:>6,}")
+    print(f"  After area:           {report['after_area_filter']:>6,}")
 
     if len(filtered) == 0:
         print("ERROR: No fires passed all filters. Check filter criteria.")
         return
 
-    # Build catalog
     catalog = build_catalog(filtered)
 
-    # Write CSV
     OUTPUT_CSV.parent.mkdir(parents=True, exist_ok=True)
     catalog.to_csv(OUTPUT_CSV, index=False)
     print("-" * 50)
@@ -183,11 +184,9 @@ def main():
     print(f"  Years: {sorted(catalog['year'].dropna().unique().tolist())}")
     print(f"  Area range (ha): {catalog['burn_area_ha'].min():,.0f} - {catalog['burn_area_ha'].max():,.0f}")
 
-    # Write manifest
     manifest = write_manifest(report, catalog, config)
     print(f"Wrote manifest: {MANIFEST_PATH.relative_to(PROJECT_ROOT)}")
 
-    # Preview
     print("-" * 50)
     print("Preview (first 5 rows):")
     print(catalog.head(5).to_string())
