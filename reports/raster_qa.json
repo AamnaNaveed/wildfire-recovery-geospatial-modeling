@@ -1,0 +1,143 @@
+{
+  "stage": 4,
+  "description": "Raster QA for one fire (Planada) - terrain, climate, land cover",
+  "timestamp": "2026-09-30T15:14:43.301789",
+  "fire": {
+    "event_id": "CA3735012030020180615",
+    "fire_name": "PLANADA",
+    "bbox_lonlat": [
+      -120.3855701998016,
+      37.31856756506364,
+      -120.18433373642416,
+      37.505606073797736
+    ]
+  },
+  "reference_grid": {
+    "source": "data\\interim\\fire_planada\\post_nbr.tif",
+    "note": "Clipped to a 20x20 km window centered on the fire",
+    "shape": [
+      126,
+      116
+    ],
+    "crs": "EPSG:32611",
+    "resolution": [
+      159.8253275109169,
+      -159.82532751091568
+    ],
+    "bounds": [
+      199980.0,
+      4135590.393013101,
+      218519.7379912664,
+      4155728.3842794765
+    ],
+    "bounds_lonlat": [
+      -120.3855701998016,
+      37.31856756506364,
+      -120.18433373642416,
+      37.505606073797736
+    ]
+  },
+  "alignment": {
+    "all_same_shape": true,
+    "shapes": {
+      "reference": [
+        126,
+        116
+      ],
+      "dem": [
+        126,
+        116
+      ],
+      "slope": [
+        126,
+        116
+      ],
+      "aspect": [
+        126,
+        116
+      ],
+      "temp": [
+        126,
+        116
+      ],
+      "precip": [
+        126,
+        116
+      ],
+      "landcover": [
+        126,
+        116
+      ]
+    }
+  },
+  "sources": {
+    "terrain": {
+      "collection": "nasadem",
+      "item": "NASADEM_HGT_n37w121"
+    },
+    "climate": {
+      "dataset": "reanalysis-era5-land",
+      "months": "2018-06"
+    },
+    "landcover": {
+      "source": "local_tile",
+      "file": "ESA_WorldCover_10m_2021_v200_N36W123_Map.tif"
+    }
+  },
+  "layers": {
+    "elevation": {
+      "name": "elevation_m",
+      "valid_pixels": 14616,
+      "total_pixels": 14616,
+      "valid_fraction": 1.0,
+      "min": 61.074920654296875,
+      "max": 428.8773193359375,
+      "mean": 156.42559814453125
+    },
+    "slope": {
+      "name": "slope_deg",
+      "valid_pixels": 14616,
+      "total_pixels": 14616,
+      "valid_fraction": 1.0,
+      "min": 0.0,
+      "max": 13.647642135620117,
+      "mean": 1.9540793895721436
+    },
+    "aspect": {
+      "name": "aspect_deg",
+      "valid_pixels": 14616,
+      "total_pixels": 14616,
+      "valid_fraction": 1.0,
+      "min": 0.0,
+      "max": 359.9415588378906,
+      "mean": 198.12326049804688
+    },
+    "temperature": {
+      "name": "temp_celsius",
+      "valid_pixels": 14616,
+      "total_pixels": 14616,
+      "valid_fraction": 1.0,
+      "min": 23.83074951171875,
+      "max": 25.991209030151367,
+      "mean": 25.081871032714844
+    },
+    "precipitation": {
+      "name": "precip_mm_total",
+      "valid_pixels": 14616,
+      "total_pixels": 14616,
+      "valid_fraction": 1.0,
+      "min": 0.05533421412110329,
+      "max": 0.05680631101131439,
+      "mean": 0.05563622713088989
+    },
+    "landcover": {
+      "name": "landcover_class",
+      "valid_pixels": 14068,
+      "total_pixels": 14616,
+      "valid_fraction": 0.9625068418171866,
+      "min": 10.0,
+      "max": 80.0,
+      "mean": 29.648847579956055
+    }
+  }
+}
