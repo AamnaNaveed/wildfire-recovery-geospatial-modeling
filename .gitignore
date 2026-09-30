@@ -7,3 +7,4 @@ __pycache__/
 data/interim/fire_planada/ 
 data/interim/fire_planada/*.tif 
 data/interim/fire_planada/*.nc 
+!data/interim/selected_fires.csv 

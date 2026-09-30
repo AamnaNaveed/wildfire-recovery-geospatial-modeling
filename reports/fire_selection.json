@@ -1,0 +1,169 @@
+{
+  "stage": 5,
+  "part": "classify_and_select",
+  "timestamp": "2026-09-30T17:46:49.647600",
+  "catalog_size": 145,
+  "ecosystem_counts": {
+    "forest": 75,
+    "grassland": 54,
+    "shrubland": 13,
+    "nan": 3
+  },
+  "selection_info": {
+    "forest": {
+      "pool_size": 75,
+      "selected": 5,
+      "years": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022
+      ]
+    },
+    "shrubland": {
+      "pool_size": 13,
+      "selected": 5,
+      "years": [
+        2018,
+        2020,
+        2021,
+        2022,
+        2020
+      ]
+    },
+    "grassland": {
+      "pool_size": 54,
+      "selected": 5,
+      "years": [
+        2018,
+        2019,
+        2020,
+        2021,
+        2022
+      ]
+    }
+  },
+  "selected_fires": [
+    {
+      "event_id": "CA3924012311020180727",
+      "fire_name": "RANCH",
+      "year": 2018,
+      "ecosystem": "forest",
+      "burn_area_ha": 172688.01
+    },
+    {
+      "event_id": "CA3879612276720191023",
+      "fire_name": "KINCADE",
+      "year": 2019,
+      "ecosystem": "forest",
+      "burn_area_ha": 31453.81
+    },
+    {
+      "event_id": "CA3720111927220200905",
+      "fire_name": "CREEK",
+      "year": 2020,
+      "ecosystem": "forest",
+      "burn_area_ha": 154399.44
+    },
+    {
+      "event_id": "CA3858612053820210815",
+      "fire_name": "CALDOR",
+      "year": 2021,
+      "ecosystem": "forest",
+      "burn_area_ha": 91758.1
+    },
+    {
+      "event_id": "CA4183012289520220729",
+      "fire_name": "MCKINNEY",
+      "year": 2022,
+      "ecosystem": "forest",
+      "burn_area_ha": 24502.12
+    },
+    {
+      "event_id": "CA3372011680020180725",
+      "fire_name": "CRANSTON",
+      "year": 2018,
+      "ecosystem": "shrubland",
+      "burn_area_ha": 5294.91
+    },
+    {
+      "event_id": "CA3424811795920200906",
+      "fire_name": "BOBCAT",
+      "year": 2020,
+      "ecosystem": "shrubland",
+      "burn_area_ha": 46800.72
+    },
+    {
+      "event_id": "CA3534311578320210617",
+      "fire_name": "MOJAVE",
+      "year": 2021,
+      "ecosystem": "shrubland",
+      "burn_area_ha": 1010.5
+    },
+    {
+      "event_id": "CA3399311448120220526",
+      "fire_name": "LOST LAKE",
+      "year": 2022,
+      "ecosystem": "shrubland",
+      "burn_area_ha": 2207.97
+    },
+    {
+      "event_id": "CA3399211696420200731",
+      "fire_name": "APPLE",
+      "year": 2020,
+      "ecosystem": "shrubland",
+      "burn_area_ha": 13089.16
+    },
+    {
+      "event_id": "CA3424011870020181108",
+      "fire_name": "WOOLSEY",
+      "year": 2018,
+      "ecosystem": "grassland",
+      "burn_area_ha": 39641.02
+    },
+    {
+      "event_id": "CA4172612124320190728",
+      "fire_name": "TUCKER",
+      "year": 2019,
+      "ecosystem": "grassland",
+      "burn_area_ha": 5716.59
+    },
+    {
+      "event_id": "CA3742412156820200816",
+      "fire_name": "SCU LIGHTNING COMPLEX",
+      "year": 2020,
+      "ecosystem": "grassland",
+      "burn_area_ha": 164158.45
+    },
+    {
+      "event_id": "CA3734911987120210711",
+      "fire_name": "RIVER",
+      "year": 2021,
+      "ecosystem": "grassland",
+      "burn_area_ha": 4125.77
+    },
+    {
+      "event_id": "CA4143212238420220902",
+      "fire_name": "MILL",
+      "year": 2022,
+      "ecosystem": "grassland",
+      "burn_area_ha": 1787.09
+    }
+  ],
+  "total_selected": 15,
+  "worldcover_tiles": [
+    "ESA_WorldCover_10m_2021_v200_N33W117_Map.tif",
+    "ESA_WorldCover_10m_2021_v200_N33W120_Map.tif",
+    "ESA_WorldCover_10m_2021_v200_N33W123_Map.tif",
+    "ESA_WorldCover_10m_2021_v200_N36W117_Map.tif",
+    "ESA_WorldCover_10m_2021_v200_N36W120_Map.tif",
+    "ESA_WorldCover_10m_2021_v200_N36W123_Map.tif",
+    "ESA_WorldCover_10m_2021_v200_N36W126_Map.tif",
+    "ESA_WorldCover_10m_2021_v200_N39W117_Map.tif",
+    "ESA_WorldCover_10m_2021_v200_N39W120_Map.tif",
+    "ESA_WorldCover_10m_2021_v200_N39W123_Map.tif",
+    "ESA_WorldCover_10m_2021_v200_N39W126_Map.tif"
+  ],
+  "sample_buffer_m": 3000
+}
