@@ -1,0 +1,212 @@
+{
+  "stage": 3,
+  "description": "Data-access test on one fire using Sentinel-2 L2A tile-stratified composites",
+  "timestamp": "2026-09-30T12:47:07.834009",
+  "fire": {
+    "event_id": "CA3735012030020180615",
+    "fire_name": "PLANADA",
+    "ignition_date": "2018-06-15",
+    "area_ha": 1883.81,
+    "bbox": [
+      -120.344516,
+      37.362204000000006,
+      -120.244516,
+      37.462204
+    ]
+  },
+  "windows": {
+    "pre_fire": [
+      "2018-03-17",
+      "2018-06-14"
+    ],
+    "post_fire": [
+      "2018-06-30",
+      "2018-09-28"
+    ]
+  },
+  "scl_mask": {
+    "bad_values": [
+      0,
+      9,
+      10
+    ],
+    "note": "0=no data, 9=cloud high prob, 10=thin cirrus"
+  },
+  "tiles": {
+    "pre_available": {
+      "T11SKB": 21,
+      "T10SGG": 23
+    },
+    "post_available": {
+      "T11SKB": 35,
+      "T10SGG": 34
+    }
+  },
+  "scenes_used": {
+    "pre": [
+      {
+        "id": "S2B_MSIL2A_20180420T184919_R113_T11SKB_20210516T174804",
+        "tile": "T11SKB",
+        "cloud_cover": 0.037691
+      },
+      {
+        "id": "S2A_MSIL2A_20180425T185031_R113_T11SKB_20201013T023048",
+        "tile": "T11SKB",
+        "cloud_cover": 0.048057
+      },
+      {
+        "id": "S2A_MSIL2A_20180611T183921_R070_T11SKB_20201026T220005",
+        "tile": "T11SKB",
+        "cloud_cover": 0.40179
+      },
+      {
+        "id": "S2A_MSIL2A_20180601T183931_R070_T11SKB_20201011T223602",
+        "tile": "T11SKB",
+        "cloud_cover": 0.417981
+      },
+      {
+        "id": "S2A_MSIL2A_20180326T185011_R113_T11SKB_20201013T143214",
+        "tile": "T11SKB",
+        "cloud_cover": 0.569886
+      },
+      {
+        "id": "S2A_MSIL2A_20180601T183931_R070_T10SGG_20201011T223559",
+        "tile": "T10SGG",
+        "cloud_cover": 0.090899
+      },
+      {
+        "id": "S2A_MSIL2A_20180611T183921_R070_T10SGG_20201026T220000",
+        "tile": "T10SGG",
+        "cloud_cover": 0.100458
+      },
+      {
+        "id": "S2B_MSIL2A_20180420T184919_R113_T10SGG_20201013T003932",
+        "tile": "T10SGG",
+        "cloud_cover": 0.13471
+      },
+      {
+        "id": "S2A_MSIL2A_20180425T185031_R113_T10SGG_20201013T023048",
+        "tile": "T10SGG",
+        "cloud_cover": 0.146364
+      },
+      {
+        "id": "S2B_MSIL2A_20180507T183919_R070_T10SGG_20201012T070811",
+        "tile": "T10SGG",
+        "cloud_cover": 0.227654
+      }
+    ],
+    "post": [
+      {
+        "id": "S2B_MSIL2A_20180818T184909_R113_T11SKB_20201011T034459",
+        "tile": "T11SKB",
+        "cloud_cover": 0.00709
+      },
+      {
+        "id": "S2B_MSIL2A_20180828T185019_R113_T11SKB_20201103T094448",
+        "tile": "T11SKB",
+        "cloud_cover": 0.009177
+      },
+      {
+        "id": "S2B_MSIL2A_20180917T185019_R113_T11SKB_20201009T021256",
+        "tile": "T11SKB",
+        "cloud_cover": 0.009201
+      },
+      {
+        "id": "S2A_MSIL2A_20180902T184921_R113_T11SKB_20201011T073623",
+        "tile": "T11SKB",
+        "cloud_cover": 0.009287
+      },
+      {
+        "id": "S2B_MSIL2A_20180907T184909_R113_T11SKB_20201011T095304",
+        "tile": "T11SKB",
+        "cloud_cover": 0.011576
+      },
+      {
+        "id": "S2A_MSIL2A_20180922T185101_R113_T10SGG_20201009T034453",
+        "tile": "T10SGG",
+        "cloud_cover": 0.024827
+      },
+      {
+        "id": "S2B_MSIL2A_20180907T184909_R113_T10SGG_20201011T095306",
+        "tile": "T10SGG",
+        "cloud_cover": 0.029702
+      },
+      {
+        "id": "S2B_MSIL2A_20180917T185019_R113_T10SGG_20201009T021256",
+        "tile": "T10SGG",
+        "cloud_cover": 0.031405
+      },
+      {
+        "id": "S2A_MSIL2A_20180823T184921_R113_T10SGG_20201011T055224",
+        "tile": "T10SGG",
+        "cloud_cover": 0.033681
+      },
+      {
+        "id": "S2A_MSIL2A_20180909T183921_R070_T10SGG_20201008T231613",
+        "tile": "T10SGG",
+        "cloud_cover": 0.039194
+      }
+    ]
+  },
+  "scene_counts": {
+    "pre_candidates": 44,
+    "post_candidates": 69,
+    "pre_used": 10,
+    "post_used": 10
+  },
+  "index_stats": {
+    "pre_ndvi": {
+      "name": "pre_ndvi",
+      "valid_pixels": 470414,
+      "total_pixels": 471969,
+      "valid_fraction": 0.9967052920848615,
+      "min": -0.6486486196517944,
+      "max": 0.9394472241401672,
+      "mean": 0.44390127062797546
+    },
+    "post_ndvi": {
+      "name": "post_ndvi",
+      "valid_pixels": 334956,
+      "total_pixels": 471969,
+      "valid_fraction": 0.7096991539698582,
+      "min": -0.939393937587738,
+      "max": 1.0,
+      "mean": 0.376402884721756
+    },
+    "pre_nbr": {
+      "name": "pre_nbr",
+      "valid_pixels": 470414,
+      "total_pixels": 471969,
+      "valid_fraction": 0.9967052920848615,
+      "min": -0.9346733689308167,
+      "max": 0.9655712246894836,
+      "mean": 0.2082623690366745
+    },
+    "post_nbr": {
+      "name": "post_nbr",
+      "valid_pixels": 334972,
+      "total_pixels": 471969,
+      "valid_fraction": 0.7097330545014608,
+      "min": -1.0,
+      "max": 0.8212947845458984,
+      "mean": 0.16571921110153198
+    },
+    "dnbr": {
+      "name": "dnbr",
+      "valid_pixels": 334968,
+      "total_pixels": 471969,
+      "valid_fraction": 0.7097245793685603,
+      "min": -1.0833137035369873,
+      "max": 1.5980732440948486,
+      "mean": 0.034598611295223236
+    }
+  },
+  "outputs": {
+    "pre_ndvi": "data\\interim\\fire_planada\\pre_ndvi.tif",
+    "post_ndvi": "data\\interim\\fire_planada\\post_ndvi.tif",
+    "pre_nbr": "data\\interim\\fire_planada\\pre_nbr.tif",
+    "post_nbr": "data\\interim\\fire_planada\\post_nbr.tif",
+    "dnbr": "data\\interim\\fire_planada\\dnbr.tif"
+  },
+  "figure": "reports\\figures\\data_access_test_preview.png"
+}
