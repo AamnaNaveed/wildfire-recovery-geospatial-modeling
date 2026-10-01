@@ -202,6 +202,25 @@ predictive intervals would require alternative methods (e.g. quantile
 regression forests, conformal prediction); these are proposed as future
 work rather than added post-hoc.
 
+### Stage 14 (Final test evaluation) — outcome note
+
+On the three pre-registered test fires (CREEK, BOBCAT, TUCKER), the
+Random Forest beat the persistence baseline on BOBCAT (RMSE 0.199 vs
+0.241) but underperformed it on CREEK (0.217 vs 0.211) and TUCKER
+(0.238 vs 0.137). XGBoost underperformed RF on all three.
+
+The TUCKER result is instructive: TUCKER is a weak-signal grassland fire
+with low within-fire dNBR variance (RMSE of ecosystem-mean prediction =
+0.137, notably lower than for other fires). On such homogeneous fires,
+the RF model overfits patterns from training fires and predicts variation
+that does not exist, adding error relative to a constant baseline.
+
+**Primary conclusion from Stage 14:** Model skill is fire-dependent.
+Machine learning adds value on fires with strong, spatially heterogeneous
+burn signals (BOBCAT, CREEK at the margin) but not on fires with weak or
+homogeneous signals (TUCKER). This is reported as the study's main
+finding rather than treated as a model failure.
+
 ---
 
 **Frozen at**: 2026-10-01
