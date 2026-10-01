@@ -168,7 +168,42 @@ and will not be inspected by any tuning code.
 - NBR is a proxy for burn severity, not a direct measurement of
   vegetation recovery.
 
+## 13. Stage outcomes and protocol amendments
+
+Any deviation from the protocol, or any post-hoc finding that affects
+interpretation, is recorded here.
+
+### Stage 9–10 (Random Forest and XGBoost) — outcome note
+
+Both models were trained under the frozen configurations. Random Forest
+outperformed XGBoost on every metric (LOFO RMSE 0.197 vs 0.207; LOFO
+Spearman 0.336 vs 0.194). Both models modestly beat the persistence
+baseline (RMSE 0.216). Random Forest is therefore the primary model for
+interpretation and reporting; XGBoost is reported as a secondary model.
+
+### Stage 11 (Leave-one-ecosystem-out) — outcome note
+
+Random Forest achieved positive mean R² (+0.036) under LOEO, higher than
+its LOFO mean R² (−0.10). The hardest ecosystem to predict was forest
+(RMSE 0.226), which is consistent with the high within-fire heterogeneity
+of large forest fires. XGBoost underperformed RF under LOEO as well
+(mean R² −0.12).
+
+### Stage 12 (Uncertainty quantification) — outcome note
+
+Seed-based uncertainty quantification (5 random seeds per model) revealed
+that Random Forest predictions are highly stable across seeds (mean
+prediction std = 0.006; XGBoost = 0.016). This indicates that seed
+variance captures model initialization noise only, not true predictive
+uncertainty. The resulting 95% prediction intervals show coverage of only
+5% (RF) and 13% (XGB), far below the nominal 95%. This is reported as a
+limitation of the uncertainty method, not as a model failure. True
+predictive intervals would require alternative methods (e.g. quantile
+regression forests, conformal prediction); these are proposed as future
+work rather than added post-hoc.
+
 ---
 
 **Frozen at**: 2026-10-01
+**Stage outcome notes added**: 2026-10-01
 **Signed**: Aamna Naveed
