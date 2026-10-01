@@ -1,0 +1,295 @@
+{
+  "stage": "6a",
+  "timestamp": "2026-10-01T13:01:26.366921",
+  "n_fires": 15,
+  "n_succeeded": 15,
+  "n_failed": 0,
+  "errors": [],
+  "fires": [
+    {
+      "event_id": "CA3924012311020180727",
+      "fire_name": "RANCH",
+      "ref_shape": [
+        857,
+        848
+      ],
+      "ref_crs": "EPSG:5070",
+      "dem_item": "NASADEM_HGT_n39w124",
+      "landcover_tile": "ESA_WorldCover_10m_2021_v200_N39W123_Map.tif",
+      "stats": {
+        "elevation_mean": 756.78369140625,
+        "slope_mean": 11.603775978088379,
+        "temp_mean": 15.565056800842285,
+        "precip_total_mean": 877.85302734375,
+        "landcover_mode": 10
+      },
+      "processed_at": "2026-10-01T11:49:04.587861"
+    },
+    {
+      "event_id": "CA3879612276720191023",
+      "fire_name": "KINCADE",
+      "ref_shape": [
+        857,
+        848
+      ],
+      "ref_crs": "EPSG:5070",
+      "dem_item": "NASADEM_HGT_n38w123",
+      "landcover_tile": "ESA_WorldCover_10m_2021_v200_N36W123_Map.tif",
+      "stats": {
+        "elevation_mean": 400.56976318359375,
+        "slope_mean": 7.495100498199463,
+        "temp_mean": 15.22160530090332,
+        "precip_total_mean": 1847.770263671875,
+        "landcover_mode": 10
+      },
+      "processed_at": "2026-10-01T11:53:55.191287"
+    },
+    {
+      "event_id": "CA3720111927220200905",
+      "fire_name": "CREEK",
+      "ref_shape": [
+        826,
+        816
+      ],
+      "ref_crs": "EPSG:5070",
+      "dem_item": "NASADEM_HGT_n37w120",
+      "landcover_tile": "ESA_WorldCover_10m_2021_v200_N36W120_Map.tif",
+      "stats": {
+        "elevation_mean": 2473.867431640625,
+        "slope_mean": 12.449783325195312,
+        "temp_mean": 6.0619964599609375,
+        "precip_total_mean": 774.2100219726562,
+        "landcover_mode": 10
+      },
+      "processed_at": "2026-10-01T11:58:45.821977"
+    },
+    {
+      "event_id": "CA3858612053820210815",
+      "fire_name": "CALDOR",
+      "ref_shape": [
+        1650,
+        1632
+      ],
+      "ref_crs": "EPSG:5070",
+      "dem_item": "NASADEM_HGT_n38w121",
+      "landcover_tile": "ESA_WorldCover_10m_2021_v200_N36W123_Map.tif",
+      "stats": {
+        "elevation_mean": 1507.8941650390625,
+        "slope_mean": 10.444787979125977,
+        "temp_mean": 9.380568504333496,
+        "precip_total_mean": 1772.592529296875,
+        "landcover_mode": 10
+      },
+      "processed_at": "2026-10-01T12:03:37.722330"
+    },
+    {
+      "event_id": "CA4183012289520220729",
+      "fire_name": "MCKINNEY",
+      "ref_shape": [
+        856,
+        849
+      ],
+      "ref_crs": "EPSG:5070",
+      "dem_item": "NASADEM_HGT_n41w123",
+      "landcover_tile": "ESA_WorldCover_10m_2021_v200_N39W123_Map.tif",
+      "stats": {
+        "elevation_mean": 1293.831298828125,
+        "slope_mean": 10.030485153198242,
+        "temp_mean": 10.94163990020752,
+        "precip_total_mean": 1028.0908203125,
+        "landcover_mode": 10
+      },
+      "processed_at": "2026-10-01T12:08:22.810716"
+    },
+    {
+      "event_id": "CA3372011680020180725",
+      "fire_name": "CRANSTON",
+      "ref_shape": [
+        824,
+        817
+      ],
+      "ref_crs": "EPSG:5070",
+      "dem_item": "NASADEM_HGT_n33w117",
+      "landcover_tile": "ESA_WorldCover_10m_2021_v200_N33W117_Map.tif",
+      "stats": {
+        "elevation_mean": 814.3533935546875,
+        "slope_mean": 8.20543384552002,
+        "temp_mean": 14.984922409057617,
+        "precip_total_mean": 352.7636413574219,
+        "landcover_mode": 20
+      },
+      "processed_at": "2026-10-01T12:13:15.304066"
+    },
+    {
+      "event_id": "CA3424811795920200906",
+      "fire_name": "BOBCAT",
+      "ref_shape": [
+        1650,
+        1634
+      ],
+      "ref_crs": "EPSG:5070",
+      "dem_item": "NASADEM_HGT_n34w119",
+      "landcover_tile": "ESA_WorldCover_10m_2021_v200_N33W120_Map.tif",
+      "stats": {
+        "elevation_mean": 831.3757934570312,
+        "slope_mean": 5.8937788009643555,
+        "temp_mean": 16.762861251831055,
+        "precip_total_mean": 457.9686279296875,
+        "landcover_mode": 20
+      },
+      "processed_at": "2026-10-01T12:18:04.172333"
+    },
+    {
+      "event_id": "CA3534311578320210617",
+      "fire_name": "MOJAVE",
+      "ref_shape": [
+        825,
+        815
+      ],
+      "ref_crs": "EPSG:5070",
+      "dem_item": "NASADEM_HGT_n35w116",
+      "landcover_tile": "ESA_WorldCover_10m_2021_v200_N33W117_Map.tif",
+      "stats": {
+        "elevation_mean": 1133.206298828125,
+        "slope_mean": 4.742356777191162,
+        "temp_mean": 17.69224739074707,
+        "precip_total_mean": 134.8527069091797,
+        "landcover_mode": 20
+      },
+      "processed_at": "2026-10-01T12:23:17.392722"
+    },
+    {
+      "event_id": "CA3399311448120220526",
+      "fire_name": "LOST LAKE",
+      "ref_shape": [
+        823,
+        815
+      ],
+      "ref_crs": "EPSG:5070",
+      "dem_item": "NASADEM_HGT_n34w115",
+      "landcover_tile": "ESA_WorldCover_10m_2021_v200_N33W117_Map.tif",
+      "stats": {
+        "elevation_mean": 356.7966003417969,
+        "slope_mean": 3.5036633014678955,
+        "temp_mean": 24.55867576599121,
+        "precip_total_mean": 88.34764099121094,
+        "landcover_mode": 60
+      },
+      "processed_at": "2026-10-01T12:28:10.772538"
+    },
+    {
+      "event_id": "CA3399211696420200731",
+      "fire_name": "APPLE",
+      "ref_shape": [
+        824,
+        817
+      ],
+      "ref_crs": "EPSG:5070",
+      "dem_item": "NASADEM_HGT_n34w117",
+      "landcover_tile": "ESA_WorldCover_10m_2021_v200_N33W117_Map.tif",
+      "stats": {
+        "elevation_mean": 1276.7196044921875,
+        "slope_mean": 7.590446472167969,
+        "temp_mean": 15.521851539611816,
+        "precip_total_mean": 387.2901611328125,
+        "landcover_mode": 20
+      },
+      "processed_at": "2026-10-01T12:31:39.238781"
+    },
+    {
+      "event_id": "CA3424011870020181108",
+      "fire_name": "WOOLSEY",
+      "ref_shape": [
+        826,
+        817
+      ],
+      "ref_crs": "EPSG:5070",
+      "dem_item": "NASADEM_HGT_n34w120",
+      "landcover_tile": "ESA_WorldCover_10m_2021_v200_N33W120_Map.tif",
+      "stats": {
+        "elevation_mean": 1024.522705078125,
+        "slope_mean": 9.92578125,
+        "temp_mean": 17.366979598999023,
+        "precip_total_mean": 405.1097106933594,
+        "landcover_mode": 30
+      },
+      "processed_at": "2026-10-01T12:36:22.741069"
+    },
+    {
+      "event_id": "CA4172612124320190728",
+      "fire_name": "TUCKER",
+      "ref_shape": [
+        856,
+        849
+      ],
+      "ref_crs": "EPSG:5070",
+      "dem_item": "NASADEM_HGT_n41w122",
+      "landcover_tile": "ESA_WorldCover_10m_2021_v200_N39W123_Map.tif",
+      "stats": {
+        "elevation_mean": 1415.7264404296875,
+        "slope_mean": 2.7703213691711426,
+        "temp_mean": 9.30216121673584,
+        "precip_total_mean": 903.571044921875,
+        "landcover_mode": 30
+      },
+      "processed_at": "2026-10-01T12:41:31.354275"
+    },
+    {
+      "event_id": "CA3742412156820200816",
+      "fire_name": "SCU LIGHTNING COMPLEX",
+      "ref_shape": [
+        3428,
+        3388
+      ],
+      "ref_crs": "EPSG:5070",
+      "dem_item": "NASADEM_HGT_n37w122",
+      "landcover_tile": "ESA_WorldCover_10m_2021_v200_N36W123_Map.tif",
+      "stats": {
+        "elevation_mean": 263.882568359375,
+        "slope_mean": 5.839173316955566,
+        "temp_mean": 17.077171325683594,
+        "precip_total_mean": 292.9244689941406,
+        "landcover_mode": 30
+      },
+      "processed_at": "2026-10-01T12:45:27.210647"
+    },
+    {
+      "event_id": "CA3734911987120210711",
+      "fire_name": "RIVER",
+      "ref_shape": [
+        857,
+        847
+      ],
+      "ref_crs": "EPSG:5070",
+      "dem_item": "NASADEM_HGT_n37w120",
+      "landcover_tile": "ESA_WorldCover_10m_2021_v200_N36W120_Map.tif",
+      "stats": {
+        "elevation_mean": 1298.929443359375,
+        "slope_mean": 10.542136192321777,
+        "temp_mean": 15.800114631652832,
+        "precip_total_mean": 1230.9168701171875,
+        "landcover_mode": 30
+      },
+      "processed_at": "2026-10-01T12:56:43.341179"
+    },
+    {
+      "event_id": "CA4143212238420220902",
+      "fire_name": "MILL",
+      "ref_shape": [
+        856,
+        849
+      ],
+      "ref_crs": "EPSG:5070",
+      "dem_item": "NASADEM_HGT_n41w123",
+      "landcover_tile": "ESA_WorldCover_10m_2021_v200_N39W123_Map.tif",
+      "stats": {
+        "elevation_mean": 1293.831298828125,
+        "slope_mean": 10.030485153198242,
+        "temp_mean": 9.689835548400879,
+        "precip_total_mean": 1082.926025390625,
+        "landcover_mode": 30
+      },
+      "processed_at": "2026-10-01T13:01:26.313337"
+    }
+  ]
+}
