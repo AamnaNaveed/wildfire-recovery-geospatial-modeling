@@ -1,0 +1,141 @@
+{
+  "stage": 11,
+  "description": "Leave-one-ecosystem-out cross-validation",
+  "timestamp": "2026-10-01T16:12:40.442771",
+  "features": [
+    "pre_nbr",
+    "pre_ndvi",
+    "elevation",
+    "slope",
+    "aspect_sin",
+    "aspect_cos",
+    "temperature",
+    "precipitation",
+    "landcover_class"
+  ],
+  "n_rows_total": 151944,
+  "per_fold_results": [
+    {
+      "rmse": 0.226,
+      "mae": 0.1681,
+      "r2": -0.0623,
+      "spearman": 0.1657,
+      "model": "RandomForest",
+      "held_out_ecosystem": "forest",
+      "n_train": 71944,
+      "n_test": 80000,
+      "train_ecosystems": [
+        "grassland",
+        "shrubland"
+      ],
+      "target_mean": 0.1667269468307495,
+      "target_std": 0.2192809134721756,
+      "pred_mean": 0.11205277257629964,
+      "pred_std": 0.054011917181058876
+    },
+    {
+      "rmse": 0.2214,
+      "mae": 0.1712,
+      "r2": 0.0812,
+      "spearman": 0.6237,
+      "model": "RandomForest",
+      "held_out_ecosystem": "shrubland",
+      "n_train": 117261,
+      "n_test": 34683,
+      "train_ecosystems": [
+        "forest",
+        "grassland"
+      ],
+      "target_mean": 0.20912733674049377,
+      "target_std": 0.23094680905342102,
+      "pred_mean": 0.11591166537652256,
+      "pred_std": 0.06254835039965942
+    },
+    {
+      "rmse": 0.1631,
+      "mae": 0.1219,
+      "r2": 0.0884,
+      "spearman": 0.2941,
+      "model": "RandomForest",
+      "held_out_ecosystem": "grassland",
+      "n_train": 114683,
+      "n_test": 37261,
+      "train_ecosystems": [
+        "forest",
+        "shrubland"
+      ],
+      "target_mean": 0.11777003854513168,
+      "target_std": 0.17083241045475006,
+      "pred_mean": 0.11496771478844973,
+      "pred_std": 0.07380806362927277
+    },
+    {
+      "rmse": 0.2564,
+      "mae": 0.1888,
+      "r2": -0.3674,
+      "spearman": 0.0495,
+      "model": "XGBoost",
+      "held_out_ecosystem": "forest",
+      "n_train": 71944,
+      "n_test": 80000,
+      "train_ecosystems": [
+        "grassland",
+        "shrubland"
+      ],
+      "target_mean": 0.1667269468307495,
+      "target_std": 0.2192809134721756,
+      "pred_mean": 0.04763501510024071,
+      "pred_std": 0.07011368870735168
+    },
+    {
+      "rmse": 0.2146,
+      "mae": 0.1626,
+      "r2": 0.1362,
+      "spearman": 0.5584,
+      "model": "XGBoost",
+      "held_out_ecosystem": "shrubland",
+      "n_train": 117261,
+      "n_test": 34683,
+      "train_ecosystems": [
+        "forest",
+        "grassland"
+      ],
+      "target_mean": 0.20912733674049377,
+      "target_std": 0.23094680905342102,
+      "pred_mean": 0.12737804651260376,
+      "pred_std": 0.09662254899740219
+    },
+    {
+      "rmse": 0.1809,
+      "mae": 0.1377,
+      "r2": -0.1217,
+      "spearman": 0.1696,
+      "model": "XGBoost",
+      "held_out_ecosystem": "grassland",
+      "n_train": 114683,
+      "n_test": 37261,
+      "train_ecosystems": [
+        "forest",
+        "shrubland"
+      ],
+      "target_mean": 0.11777003854513168,
+      "target_std": 0.17083241045475006,
+      "pred_mean": 0.14631469547748566,
+      "pred_std": 0.10559472441673279
+    }
+  ],
+  "aggregate_rf": {
+    "rmse_mean": 0.20350000000000001,
+    "rmse_std": 0.028628773404857345,
+    "r2_mean": 0.03576666666666667,
+    "r2_std": 0.06940587551177174,
+    "spearman_mean": 0.36116666666666664
+  },
+  "aggregate_xgb": {
+    "rmse_mean": 0.21730000000000002,
+    "rmse_std": 0.030881817735791833,
+    "r2_mean": -0.11763333333333333,
+    "r2_std": 0.20561394786238493,
+    "spearman_mean": 0.25916666666666666
+  }
+}
