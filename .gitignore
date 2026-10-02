@@ -1,11 +1,36 @@
-data/raw/ 
-data/interim/* 
-!data/interim/fire_catalog.csv 
-__pycache__/ 
-*.pyc 
-.ipynb_checkpoints/ 
-data/interim/fire_planada/ 
-data/interim/fire_planada/*.tif 
-data/interim/fire_planada/*.nc 
-!data/interim/selected_fires.csv 
-!data/interim/fire_perimeters.csv 
+# Data — never commit raw or intermediate data
+data/raw/
+data/interim/*
+!data/interim/fire_catalog.csv
+!data/interim/selected_fires.csv
+!data/interim/fire_perimeters.csv
+!data/interim/test_fires.txt
+data/interim/fire_planada/
+data/interim/fire_planada/*.tif
+data/interim/fire_planada/*.nc
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Environment
+.env
+.venv/
+venv/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Temp files
+reports/*.json.tmp
+*.bak
