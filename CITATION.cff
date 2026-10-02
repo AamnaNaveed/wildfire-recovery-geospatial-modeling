@@ -1,8 +1,25 @@
 cff-version: 1.2.0
-message: "If you use this software, please cite it as below."
+message: "If you use this software or its results, please cite it as below."
 authors:
   - family-names: Naveed
     given-names: Aamna
 title: "Wildfire Recovery Geospatial Modeling"
-version: 0.0.1
-date-released: 2026-09-29
+abstract: >-
+  Spatially explicit modelling of post-fire vegetation recovery across
+  15 California wildfires (2018–2022) using Sentinel-2, MTBS, NASADEM,
+  ERA5-Land, and ESA WorldCover. Evaluates persistence, Random Forest,
+  and XGBoost under leave-one-fire-out and leave-one-ecosystem-out
+  cross-validation.
+version: 0.9.0
+date-released: 2026-10-02
+license: MIT
+repository-code: "https://github.com/AamnaNaveed/wildfire-recovery-geospatial-modeling"
+keywords:
+  - wildfire
+  - remote sensing
+  - Sentinel-2
+  - burn severity
+  - dNBR
+  - spatial cross-validation
+  - machine learning
+  - California
